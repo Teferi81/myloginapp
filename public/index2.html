@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peace Seeker - Home</title>
+    <link rel="stylesheet" href="output.css"/>
+</head>
+<body class="bg-gray-50">
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="fixed h-screen w-64 bg-gradient-to-b from-green-400 to-blue-500 text-white">
+            <div class="p-6">
+                <h1 class="text-2xl font-bold mb-8">Peace Seeker</h1>
+                <nav>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="#" class="flex items-center space-x-3 p-3 rounded-lg bg-white/20 hover:bg-white/30 transition">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                                </svg>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="showSnackbar(event)" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-white/20 transition">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-white/20 transition">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                                </svg>
+                                <span>About Us</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="ml-64 flex-1 p-8">
+            <!-- Hero Section -->
+            <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-12 mb-8">
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome to Peace Seeker</h1>
+                <p class="text-lg text-gray-600 mb-8">Discover inner peace and tranquility through our guided journey</p>
+                <button class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition">
+                    Start Your Journey
+                </button>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Mindful Living</h3>
+                    <p class="text-gray-600">Experience the power of mindfulness in your daily life.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Guided Meditation</h3>
+                    <p class="text-gray-600">Follow our expert-led meditation sessions.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Community Support</h3>
+                    <p class="text-gray-600">Join our supportive community of peace seekers.</p>
+                </div>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="bg-white rounded-xl p-8 shadow-sm">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Stay Connected</h2>
+                <p class="text-gray-600 mb-6">Subscribe to our newsletter for weekly mindfulness tips and updates.</p>
+                <div class="flex gap-4">
+                    <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold transition">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="snackbar" class="hidden fixed bottom-4 right-4 bg-gray-800 text-white px-6 py-3 rounded-lg shadow-lg transition-opacity duration-300">
+        Coming soon! This feature will be updated.
+    </div>
+
+    <script>
+        function showSnackbar(event) {
+            event.preventDefault();
+            const snackbar = document.getElementById('snackbar');
+            snackbar.classList.remove('hidden');
+            snackbar.classList.add('opacity-100');
+            
+            setTimeout(() => {
+                snackbar.classList.add('opacity-0');
+                setTimeout(() => {
+                    snackbar.classList.add('hidden');
+                    snackbar.classList.remove('opacity-0');
+                }, 300);
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
